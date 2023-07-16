@@ -1,4 +1,4 @@
-const img2 = "../src/assets/images/project-img3.png";
+const img2 = "../src/assets/images/bg.jpg";
 export const projects = [
     {
       id: 1,
