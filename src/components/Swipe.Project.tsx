@@ -7,13 +7,16 @@ import { Navigation, Pagination } from "swiper";
 import { projects } from "../data/project-all-data";
 import ProjectCard from "./ProjectCard";
 import ProjectTable from "./Table.Project";
+import bg from "../assets/images/banner-bg.png";
 
 function Projects() {
   const [durum, setDurum] = useState<number>(1);
 
   return (
     <>
-      <div id="projects" className="projects bg-[#171717] text-white py-10">
+      <div id="projects" className="projects text-white py-10"
+              style={{ backgroundImage: `url(${bg})` }}
+              >
         <h1 className="text-center text-4xl font-bold py-6">Projects</h1>
         <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
           "This are the data show of My Project since I joined Fullstack bootcamp in early 2023 till present."
@@ -54,10 +57,11 @@ function Projects() {
               }}
               navigation={true}
               modules={[Navigation, Pagination]}
-              className="mySwiper p-10 bg-white rounded-xl"
+              className="mySwiper p-10 rounded-xl bg-[#171717]"
+              
             >
               {projects.map((item) => (
-                <SwiperSlide key={item.id} className="rounded-3xl">
+                <SwiperSlide key={item.id} className="rounded-3xl ">
                   <a
                     href={item.link}
                     target="_blank"
@@ -73,7 +77,7 @@ function Projects() {
         {durum === 2 ? (
           <div
             id="table1"
-            className="text-center text-white flex justify-center shadow-xl shadow-white rounded-xl bg-[linear-gradient(90deg,#b004b0,#38097a);] py-16 max-w-4xl mx-auto lg:p-5"
+            className="text-center text-white flex justify-center rounded-xl py-16 c-4xl mx-auto lg:p-5"
           >
             < ProjectTable />
           </div>

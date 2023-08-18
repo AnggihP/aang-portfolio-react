@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import logo from "../assets/images/astronout.png";
 // import logo1 from "../assets/images/astronout1.png";
-import bg from "../assets/images/bg1.jpg";
+import bg from "../assets/images/banner-bg.png";
 import Navbar from "./Navbar";
 import "../styles.css";
 
@@ -9,7 +9,7 @@ function Header() {
   const [readMore, setReadMore] = useState(false);
   const extraContent = (
     <div>
-      <p className="text-white py-4 max-w-lg ">
+      <p className="text-white py-4 max-w-lg tl:text-xs ">
         I have been learning to be Software Engineer by joining RevoU Full Stack
         Software Engineer 2023 program. I want to change the path of my career
         so that I can be part of the future industry. In order to answer the
@@ -35,13 +35,14 @@ function Header() {
                 Welcome to my Portfolio
               </button>
             </div>
-            <h1 className="text-white text-5xl font-bold">Hi! I'm Anggih</h1>
-            <p className="text-white py-4 max-w-lg ">
+            <h1 className="text-white text-5xl font-bold tl:text-lg">Hi! I'm Anggih</h1>
+            <p className="text-white py-4 max-w-lg tl:text-xs ">
               I am a person who has good analytical thinking. I am able to
               quickly adapt to new environments. A person who is fast in
               learning and practicing. I have more than 3 years of work
               experience and ready to continue to develop myself and the
               company. I have good oral or written skills in English.
+            </p>
               <div className="App">
                 <a
                   className="read-more-link"
@@ -53,7 +54,6 @@ function Header() {
                 </a>
                 {readMore && extraContent}
               </div>
-            </p>
             {/* <button className="  text-white text-2xl">
               Let's Connect{" "}
               <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i>{" "}
