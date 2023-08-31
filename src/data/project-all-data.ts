@@ -1,4 +1,4 @@
-import img24 from "../src/assets/projects/w24-group4.jpg";
+import img24 from "/src/assets/projects/w24-group4.jpg";
 
 export const projects = [
     {
