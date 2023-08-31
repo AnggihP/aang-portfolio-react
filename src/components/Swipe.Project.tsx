@@ -38,14 +38,6 @@ function Projects() {
           >
             On-Table
           </button>
-          {/* <button
-            onClick={() => setDurum(3)}
-            className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px]  ${
-              durum === 3 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
-            }`}
-          >
-            Text-2
-          </button> */}
         </div>
         <div className="p-10 justify-center items-center">
           {durum === 1 && (
@@ -82,14 +74,6 @@ function Projects() {
             < ProjectTable />
           </div>
         ) : null}
-        {/* {durum === 3 ? (
-          <div
-            id="text2"
-            className="tab-pane text-center text-white py-5 lg:p-5"
-          >
-            isi text-2
-          </div>
-        ) : null} */}
       </div>
     </>
   );
