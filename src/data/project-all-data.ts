@@ -1,10 +1,12 @@
+import img24 from "../src/assets/projects/w24-group4.jpg";
+
 export const projects = [
     {
       id: 1,
       title: "Final Project - Mentalk.id",
       description: "Next.js, Tailwind, Typescript, Prisma, GoogleAuth, GitHubAuth, NextAuth, PostgreSQL ",
       link: "https://github.com/AnggihP/w24-group-final-group-4",
-      img: "../src/assets/projects/w24-group4.jpg",
+      img: img24,
     },
     {
       id: 2,
