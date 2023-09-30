@@ -11,7 +11,7 @@ import nextjs from '..//assets/nextjs.png';
 import postgres from '../assets/postgres.png';
 import redux from '../assets/redux.png';
 import tailwind from '../assets/tailwind.png';
-import bg from '../assets/images/banner-bg.png';
+import bg from '../assets/images/bg3.jpg';
 
 interface Tech {
   id: number;
@@ -104,7 +104,7 @@ const Techs: React.FC = () => {
     >
         <div className="skills-wrapper text-center text-white p-10 rounded-[50px] lg:p-2">
         <h1 className="text-4xl ">Skills</h1>
-        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
+        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white py-4 max-w-lg tl:text-xs">
           "These are several tools that we've used for development and production."
         </p>      </div>
 

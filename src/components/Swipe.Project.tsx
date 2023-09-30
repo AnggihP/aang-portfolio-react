@@ -7,7 +7,7 @@ import { Navigation, Pagination } from "swiper";
 import { projects } from "../data/project-all-data";
 import ProjectCard from "./ProjectCard";
 import ProjectTable from "./Table.Project";
-import bg from "../assets/images/banner-bg.png";
+import bg from "../assets/images/bg4.jpg";
 
 function Projects() {
   const [durum, setDurum] = useState<number>(1);
@@ -18,7 +18,7 @@ function Projects() {
               style={{ backgroundImage: `url(${bg})` }}
               >
         <h1 className="text-center text-4xl font-bold py-6">Projects</h1>
-        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-[#939191]">
+        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white py-4 max-w-lg tl:text-xs">
           "This are the data show of My Project since I joined Fullstack bootcamp in early 2023 till present."
         </p>
         <div className="flex justify-center items-center gap-4 mt-12 mb-2">
