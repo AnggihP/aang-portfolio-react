@@ -11,7 +11,7 @@ import nextjs from '..//assets/nextjs.png';
 import postgres from '../assets/postgres.png';
 import redux from '../assets/redux.png';
 import tailwind from '../assets/tailwind.png';
-import bg from '../assets/images/bg3.jpg';
+import bg from '../assets/images/bg8.jpg';
 
 interface Tech {
   id: number;
@@ -38,7 +38,7 @@ const Techs: React.FC = () => {
       id: 3,
       src: javascript,
       title: 'Javascript',
-      style: 'shadow-blue-500',
+      style: 'shadow-yellow-500',
     },
     {
       id: 4,
@@ -50,31 +50,31 @@ const Techs: React.FC = () => {
       id: 5,
       src: vue,
       title: 'Vue',
-      style: 'shadow-blue-500',
+      style: 'shadow-green-500',
     },
     {
       id: 6,
       src: git,
       title: 'Git',
-      style: 'shadow-blue-500',
+      style: 'shadow-red-500',
     },
     {
       id: 7,
       src: github,
       title: 'Github',
-      style: 'shadow-blue-500',
+      style: 'shadow-white',
     },
     {
       id: 8,
       src: node,
       title: 'node',
-      style: 'shadow-blue-500',
+      style: 'shadow-green-500',
     },
     {
       id: 9,
       src: nextjs,
       title: 'nextjs',
-      style: 'shadow-blue-500',
+      style: 'shadow-white',
     },
     {
       id: 10,
@@ -86,7 +86,7 @@ const Techs: React.FC = () => {
       id: 11,
       src: redux,
       title: 'redux',
-      style: 'shadow-blue-500',
+      style: 'shadow-purple-500',
     },
     {
       id: 12,
@@ -104,11 +104,12 @@ const Techs: React.FC = () => {
     >
         <div className="skills-wrapper text-center text-white p-10 rounded-[50px] lg:p-2">
         <h1 className="text-4xl ">Skills</h1>
-        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white py-4 max-w-lg tl:text-xs">
+        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white py-4 tl:text-sm">
           "These are several tools that we've used for development and production."
-        </p>      </div>
+        </p>     
+        </div>
 
-      <div className="w-full grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-6 gap-8 text-center py-8 sm:px-0">
+      <div className="w-full grid grid-cols-6 tl:grid-cols-4 gap-8 text-center py-8 tl:px-0">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}

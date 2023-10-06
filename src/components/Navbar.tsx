@@ -50,8 +50,8 @@ function Navbar(): JSX.Element {
           </ul>
 
           <div className="icon text-lg flex gap-4 lg:gap-8 lg:my-10">
-            <a href="https://twitter.com/aanggihpratama" target="_blank">
-              <i className="fa-brands fa-twitter border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+          <a href="mailto:anggih10@gmail.com" target="_blank">
+              <i className="fa fa-envelope border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
 
             <a href="https://www.instagram.com/aanggihpratama" target="_blank">
@@ -62,9 +62,11 @@ function Navbar(): JSX.Element {
             </a>
           </div>
           <div className="btn">
+          <a href="https://www.linkedin.com/in/anggihp/" target="_blank">
             <button className="border-[1px] border-white border-solid py-2 px-4 hover:bg-white hover:text-black font-bold">
               Let's Connect
             </button>
+            </a>
           </div>
         </nav>
         <i

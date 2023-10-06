@@ -1,7 +1,5 @@
 import { useState } from 'react';
-// import logo from "../assets/images/astronout.png";
-// import logo1 from "../assets/images/astronout1.png";
-import bg from '../assets/images/bg2.jpg';
+import bg from '../assets/images/bg7x.jpg';
 import Navbar from './Navbar';
 import '../styles.css';
 
@@ -9,7 +7,7 @@ function Header() {
   const [readMore, setReadMore] = useState(false);
   const extraContent = (
     <div>
-      <p className="text-white py-4 max-w-lg tl:text-xs ">
+      <p className="text-white py-4 max-w-lg tl:text-xs text-sm">
         I am also proficient in using some tech stacks such as HTML, CSS,
         javascript, typescript, tailwind, react, next js, vue js, vsCode,
         GitHub, npm, pnpm, JSON, and PostgreSQL. With the skills and experiences
@@ -18,7 +16,7 @@ function Header() {
       </p>
     </div>
   );
-  const linkName = readMore ? 'Read Less ' : 'Read More !';
+  const linkName = readMore ? 'Read Less ! ' : 'Read More !';
 
   return (
     <>
@@ -31,19 +29,19 @@ function Header() {
         <div className="wrapper flex justify-between items-center h-screen w-full px-20 lg:justify-center lg:px-6">
           <div className="content lg:text-center">
             <div className="btn py-3">
-              <button className=" border-2 border-[#b0aaaa] font-bold text-white bg-[linear-gradient(90deg,#b004b0,#38097a)] p-4 rounded-2xl">
+              <button className=" border-2 text-sm border-[#b0aaaa] font-bold text-white bg-[linear-gradient(90deg,#b004b0,#38097a)] p-4 rounded-2xl">
                 Welcome to my website
               </button>
             </div>
-            <h1 className="text-white text-5xl font-bold tl:text-lg">
+            <h1 className="text-white text-3xl font-bold tl:text-2xl">
               Hi! I'm Anggih
             </h1>
-            <p className="text-white py-4 max-w-lg tl:text-xs ">
+            <p className="text-white py-4 max-w-lg tl:text-sm text-sm">
               I am a person that want to work hard toward expertise and mastery
               in my field. I want to be directly involved in helping
               individuals. 
               </p>
-              <p className="text-white py-4 max-w-lg tl:text-xs ">
+              <p className="text-white py-4 max-w-lg tl:text-sm text-sm">
               I can work on flexible hours. I have 3 years
               experience of organization life back in college and 4 years of
               work experience in several different roles and companies.
@@ -53,6 +51,7 @@ function Header() {
               make an impression.
             </p>
             <div className="App">
+            {readMore && extraContent}
               <a
                 className="read-more-link"
                 onClick={() => {
@@ -61,19 +60,8 @@ function Header() {
               >
                 <p className="text-white font-bold">{linkName}</p>
               </a>
-              {readMore && extraContent}
             </div>
-            {/* <button className="  text-white text-2xl">
-              Let's Connect{" "}
-              <i className="fa-solid fa-arrow-right text-lg  p-[2px] "></i>{" "}
-            </button> */}
           </div>
-          {/* <div className="image banner-astronout lg:hidden absolute w-[300px] flex ">
-            <img className="w-96 ast-img" src={logo1} alt="" />
-          </div>
-          <div className="image banner-astronout1 lg:hidden absolute w-[300px] flex ">
-            <img className="w-96 ast-img" src={logo} alt="" />
-          </div> */}
         </div>
       </div>
     </>
