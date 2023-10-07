@@ -18,10 +18,10 @@ function Projects() {
         style={{ backgroundImage: `url(${bg})` }}
       >
         <h1 className="text-center text-4xl font-bold py-6">Projects</h1>
-        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white py-4 tl:text-sm">
+        <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white tl:text-sm">
           "This are the data show of My Project since I joined Fullstack bootcamp in early 2023 till present."
         </p>
-        <div className="flex justify-center items-center gap-4 mt-12 mb-2">
+        <div className="flex justify-center items-center gap-4 mt-5">
           <button
             onClick={() => setDurum(1)}
             className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px] ${durum === 1 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
@@ -37,7 +37,7 @@ function Projects() {
             On-Table
           </button>
         </div>
-        <div className="p-10 justify-center items-center">
+        <div className=" justify-center items-center p-10">
           {durum === 1 && (
             <Swiper
               slidesPerView={3}
@@ -105,7 +105,7 @@ function Projects() {
         {durum === 2 ? (
           <div
             id="table1"
-            className="text-center text-white flex justify-center rounded-xl py-16 c-4xl mx-auto lg:p-5"
+            className="text-center text-white flex justify-center rounded-xl c-4xl mx-auto lg:p-5"
           >
             < ProjectTable />
           </div>

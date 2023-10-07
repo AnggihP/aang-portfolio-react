@@ -10,8 +10,8 @@ function Footer() {
             <a href="mailto:anggih10@gmail.com" target="_blank">
               <i className="fa fa-envelope border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
-            <a href="https://www.instagram.com/aanggihpratama" target="_blank">
-              <i className="fa-brands fa-instagram border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
+            <a href="https://wa.me/6281256306072" target="_blank">
+              <i className="fa-brands fa-whatsapp border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
             </a>
             <a href="https://github.com/AnggihP" target="_blank">
               <i className="fa-brands fa-github border-[1px] border-white p-2 rounded-[100%] hover:bg-white hover:text-black"></i>
