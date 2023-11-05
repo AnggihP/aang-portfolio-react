@@ -3,7 +3,7 @@
 function Footer() {
   return (
     <>
-      <div className="footer bg-[#171717]">
+      <div className="footer bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
         <div className="wrap flex justify-between items-center px-12 text-white font-bold py-6 tl:px-4 tl:py-4 ">
           <h1 className="text-3xl">AnggihP</h1>
           <div className="flex gap-4 cursor-pointer ">

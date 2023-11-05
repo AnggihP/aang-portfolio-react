@@ -11,7 +11,7 @@ import nextjs from '..//assets/nextjs.png';
 import postgres from '../assets/postgres.png';
 import redux from '../assets/redux.png';
 import tailwind from '../assets/tailwind.png';
-import bg from '../assets/images/bg8.jpg';
+// import bg from '../assets/images/bg9.1.jpg';
 
 interface Tech {
   id: number;
@@ -99,8 +99,8 @@ const Techs: React.FC = () => {
   return (
     <div
       id="skills"
-      style={{ backgroundImage: `url(${bg})` }}
-      className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4"
+      // style={{ backgroundImage: `url(${bg})` }}
+      className="wrapper h-full bg-no-repeat bg-center bg-cover p-16 lg:p-4 bg-black"
     >
         <div className="skills-wrapper text-center text-white p-10 rounded-[50px] lg:p-2">
         <h1 className="text-4xl ">Skills</h1>
@@ -113,7 +113,7 @@ const Techs: React.FC = () => {
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}
-            className={`flex flex-col justify-between shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+            className={`flex flex-col justify-between shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900`}
           >
             <img className="w-20 mx-auto py-2 md:py-4" src={src} alt="" />
             <p className="mt-4 md:mt-2 text-white text-lg">{title}</p>

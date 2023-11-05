@@ -3,7 +3,7 @@ import { projects } from "../data/project-all-data";
 
 function ProjectTable() {
   return (
-    <table className="border-white border-separate border rounded-lg border-spacing-1 bg-[linear-gradient(90deg,#b004b0,#38097a)]">
+    <table className="border-white border-separate border rounded-lg border-spacing-1 bg-[radial-gradient(ellipse_at_left,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900">
       <thead className="bg-[#171717]" >
         <tr >
           <th className="border-white border py-2 text-2xl tl:text-lg ">NO.</th>

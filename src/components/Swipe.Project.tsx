@@ -7,15 +7,15 @@ import { Navigation, Pagination } from "swiper";
 import { projects } from "../data/project-all-data";
 import ProjectCard from "./ProjectCard";
 import ProjectTable from "./Table.Project";
-import bg from "../assets/images/bg9.jpg";
+// import bg from "../assets/images/bg9.1.jpg";
 
 function Projects() {
   const [durum, setDurum] = useState<number>(1);
 
   return (
     <>
-      <div id="projects" className="projects text-white py-10"
-        style={{ backgroundImage: `url(${bg})` }}
+      <div id="projects" className="projects text-white py-10 bg-black"
+        // style={{ backgroundImage: `url(${bg})` }}
       >
         <h1 className="text-center text-4xl font-bold py-6">Projects</h1>
         <p className="text-center max-w-[1000px] lg:px-6 mx-auto text-white tl:text-sm">
@@ -24,14 +24,14 @@ function Projects() {
         <div className="flex justify-center items-center gap-4 mt-5">
           <button
             onClick={() => setDurum(1)}
-            className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px] ${durum === 1 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
+            className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px] ${durum === 1 ? "bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900" : ""
               }`}
           >
             On-Swipe
           </button>
           <button
             onClick={() => setDurum(2)}
-            className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px] ${durum === 2 ? "bg-[linear-gradient(90deg,#b004b0,#38097a)]" : ""
+            className={`font-bold text-[19px] border-2 bg-[#171717] rounded-[6px] p-[4px] ${durum === 2 ? "bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900" : ""
               }  `}
           >
             On-Table
@@ -47,7 +47,7 @@ function Projects() {
               }}
               navigation={true}
               modules={[Navigation, Pagination]}
-              className="mySwiper p-10 rounded-xl bg-[linear-gradient(90deg,#b004b0,#38097a)] tl:p-5 shadow-white shadow-lg"
+              className="mySwiper p-10 rounded-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900 tl:p-5 shadow-white shadow-lg"
 
             >
               {projects.map((item) => (
