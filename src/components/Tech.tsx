@@ -109,7 +109,7 @@ const Techs: React.FC = () => {
         </p>     
         </div>
 
-      <div className="w-full grid grid-cols-6 tl:grid-cols-4 gap-8 text-center py-8 tl:px-0">
+      <div className="w-full grid grid-cols-6 tl:grid-cols-2 gap-8 text-center py-8 tl:px-0">
         {techs.map(({ id, src, title, style }) => (
           <div
             key={id}

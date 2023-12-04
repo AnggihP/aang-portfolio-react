@@ -48,7 +48,20 @@ function Projects() {
               navigation={true}
               modules={[Navigation, Pagination]}
               className="mySwiper p-10 rounded-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900 tl:p-5 shadow-white shadow-lg"
-
+              breakpoints={{
+                // When window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                },
+                // When window width is >= 768px
+                768: {
+                  slidesPerView: 2,
+                },
+                // When window width is >= 1024px
+                1024: {
+                  slidesPerView: 3,
+                },
+              }}
             >
               {projects.map((item) => (
                 <SwiperSlide key={item.id} className="rounded-xl shadow-white shadow-md">
@@ -64,44 +77,6 @@ function Projects() {
             </Swiper>
           )}
         </div>
-        {/* <div className="p-5 justify-center items-center">
-          {durum === 1 && (
-            <Swiper
-              slidesPerView={2}
-              spaceBetween={24}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Navigation, Pagination]}
-              className="mySwiper p-10 rounded-xl bg-[#171717] tl:p-5"
-              
-            >
-              {projects.map((item) => (
-                <SwiperSlide key={item.id} className="rounded-3xl ">
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ProjectCard item={item} />
-                  </a>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          )}
-        </div> */}
-        {/* <div className="w-full grid tl:grid-cols-3 gap-8 text-center py-8 tl:px-0 lg:hidden">
-        {projects.map(({ name, title, style }) => (
-          <div
-            key={id}
-            className={`flex flex-col justify-between shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-          >
-            <img className="w-20 mx-auto py-2 md:py-4" item.img={item.img} alt="" />
-            <p className="mt-4 md:mt-2 text-white text-lg">{title}</p>
-          </div>
-        ))}
-        </div> */}
         {durum === 2 ? (
           <div
             id="table1"

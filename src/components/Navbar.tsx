@@ -30,7 +30,7 @@ function Navbar(): JSX.Element {
   return (
     <>
       <div className="navbarcon flex justify-between items-center px-20 py-6 bg-transparent z-40 text-white lg:px-6 fixed w-full">
-        <h1 className="text-4xl font-bold">AnggihP</h1>
+        <h1 className="text-4xl tl:text-xl font-bold">AnggihP</h1>
 
         <nav
           className={`flex justify-center items-center gap-x-10 ${
