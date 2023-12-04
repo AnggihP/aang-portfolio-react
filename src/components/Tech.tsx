@@ -67,31 +67,31 @@ const Techs: React.FC = () => {
     {
       id: 8,
       src: node,
-      title: 'node',
+      title: 'Nodejs',
       style: 'shadow-green-500',
     },
     {
       id: 9,
       src: nextjs,
-      title: 'nextjs',
+      title: 'Nextjs',
       style: 'shadow-white',
     },
     {
       id: 10,
       src: postgres,
-      title: 'postgres',
+      title: 'Postgres',
       style: 'shadow-blue-500',
     },
     {
       id: 11,
       src: redux,
-      title: 'redux',
+      title: 'Redux',
       style: 'shadow-purple-500',
     },
     {
       id: 12,
       src: tailwind,
-      title: 'tailwind',
+      title: 'Tailwind',
       style: 'shadow-blue-500',
     },
   ];

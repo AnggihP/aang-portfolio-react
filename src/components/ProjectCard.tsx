@@ -13,12 +13,14 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ item }) => {
   return (
     <>
-      <div className="img-box h-[220px] lg2:w-auto mx-auto flex justify-center items-center relative overflow-hidden rounded-xl">
-        <img src={item.img} alt="" className="h-5 w-5" />
-        <div className="p absolute top-[-100%] left-0 h-full w-full text-center bg-[#1b2181b7] p-4 pt-16">
-          <h1 className="font-bold text-2xl tl:text-sm">{item.title}</h1>
-          <p className="font-bold text-sm tl:text-xs">{item.description}</p>
-        </div>
+      <div className="h-[400px] flex flex-col rounded-xl">
+      <div className="img-box h-[200px] my-0 rounded-xl">
+        <img src={item.img} alt="" className="h-5 w-5 rounded-t-xl" />
+      </div>
+        <div className="bottom-[-100%] h-[200px] left-0 w-full text-center bg-[#000000] rounded-b-xl flex flex-col justify-center">
+          <h1 className="font-bold text-xl tl:text-sm mb-5 text-blue-500 ">{item.title}</h1>
+          <p className="font-bold text-sm tl:text-xs ">{item.description}</p>
+          </div>
       </div>
     </>
   );
